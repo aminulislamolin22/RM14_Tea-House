@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/aabfb85823.js" crossorigin="anonymous"></script>
+    <!-- tailwind cdn -->
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
-    
+    <main class="ml-36">
+        <section class="lg:flex items-center">
+            <div>
+                <h1 class="text-5xl lg:text-7xl font-bold mt-16">It's good <br> tea time at The <br> Tea House</h1>
+                <p class="text-gray-500 my-7">
+                    Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+                </p>
+                <button
+                    class="p-4 lg:text-2xl text-[#FFFFFF] font-bold rounded-xl bg-gradient-to-r from-orange-500 to-red-600">Explore
+                    More <i class="fa-solid fa-arrow-right -rotate-45 ml-1 lg:text-xl"></i>
+                </button>
+            </div>
+            <div class="mt-20 relative">
+                <img class="w-full" src="images/banner.png" alt="">
+                <div class="lg:top-72 lg:left-20 flex items-center shadow-lg p-3 bg-white rounded-xl absolute">
+                    <div><i class="fa-solid fa-star text-2xl text-amber-500"></i></div>
+                    <div class="ml-2">
+                        <h2 class="text-3xl font-extrabold">5.00</h2>
+                        <p class="text-gray-500">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
